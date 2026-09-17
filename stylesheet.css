@@ -19,7 +19,9 @@ body {
 }
 
 .profile-photo {
-    width: 190px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
