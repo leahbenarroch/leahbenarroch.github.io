@@ -1,58 +1,63 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: white;
-    color: #222;
+    background-color: #ffffff;
+    color: #222222;
 }
 
 .container {
+    width: 100%;
     max-width: 850px;
     margin: 60px auto;
     padding: 0 25px;
+    box-sizing: border-box;
 }
 
 
-/* ---------- INTRO ---------- */
+/* =========================
+   INTRO
+   ========================= */
 
 .intro {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 40px;
     margin-bottom: 55px;
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 4px;
     flex-shrink: 0;
 }
 
 .bio {
     flex: 1;
+    min-width: 0;
 }
 
 
-/* ---------- TEXT ---------- */
+/* =========================
+   TEXT
+   ========================= */
 
 h1 {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0 0 18px 0;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 400;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: 50px 0 30px 0;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 a {
@@ -65,53 +70,64 @@ a:hover {
 }
 
 
-/* ---------- PROJECTS ---------- */
+/* =========================
+   PROJECTS
+   ========================= */
 
 .project {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
-    margin: 35px 0;
+    gap: 28px;
+    margin-bottom: 38px;
 }
 
 .project-image {
-    width: 110px;
-    height: 80px;
+    width: 150px;
+    height: 105px;
     object-fit: contain;
-    flex-shrink: 0;
+    flex: 0 0 150px;
 }
 
 .project-info {
     flex: 1;
+    min-width: 0;
 }
 
 .project-info h3 {
-    margin: 0 0 5px 0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
+    margin: 0 0 5px 0;
+    line-height: 1.3;
 }
 
 .project-meta {
-    margin: 0 0 10px 0;
-    color: #666;
-    font-size: 14px;
+    color: #666666;
+    font-size: 13px;
+    margin: 0 0 8px 0;
 }
 
 .project-info p {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 6px 0;
 }
 
 .project-links {
-    font-size: 15px;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 .project-highlight {
-    font-size: 14px;
+    font-size: 13px;
+    color: #555555;
 }
 
 
-/* ---------- MOBILE ---------- */
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 650px) {
 
@@ -123,22 +139,31 @@ a:hover {
     .intro {
         flex-direction: column;
         align-items: flex-start;
-        gap: 25px;
+        gap: 22px;
     }
 
     .profile-photo {
-        width: 150px;
-        height: 150px;
+        width: 145px;
+        height: 145px;
+    }
+
+    h1 {
+        font-size: 29px;
     }
 
     .project {
-        flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 18px;
     }
 
     .project-image {
-        width: 110px;
+        width: 105px;
         height: 80px;
+        flex-basis: 105px;
     }
+
+    .project-info h3 {
+        font-size: 16px;
+    }
+
 }
