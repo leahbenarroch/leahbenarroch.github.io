@@ -84,10 +84,10 @@ a:hover {
 }
 
 .project-image {
-    width: 150px;
-    height: 105px;
+    width: 190px;
+    height: 130px;
     object-fit: contain;
-    flex: 0 0 150px;
+    flex: 0 0 190px;
 }
 
 .project-info {
@@ -157,9 +157,9 @@ a:hover {
     }
 
     .project-image {
-        width: 105px;
-        height: 80px;
-        flex-basis: 105px;
+        width: 130px;
+        height: 95px;
+        flex-basis: 130px;
     }
 
     .project-info h3 {
