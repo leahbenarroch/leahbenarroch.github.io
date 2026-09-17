@@ -11,6 +11,9 @@ body {
     padding: 0 25px;
 }
 
+
+/* ---------- INTRO ---------- */
+
 .intro {
     display: flex;
     align-items: center;
@@ -23,22 +26,28 @@ body {
     height: 180px;
     object-fit: cover;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .bio {
     flex: 1;
 }
 
+
+/* ---------- TEXT ---------- */
+
 h1 {
     font-size: 34px;
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 24px;
     font-weight: 400;
     margin-top: 50px;
+    margin-bottom: 25px;
 }
 
 p {
@@ -55,29 +64,21 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 650px) {
 
-    .intro {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .profile-photo {
-        width: 160px;
-    }
+/* ---------- PROJECTS ---------- */
 
 .project {
     display: flex;
-    gap: 30px;
     align-items: center;
-    margin: 45px 0;
+    gap: 25px;
+    margin: 35px 0;
 }
 
 .project-image {
-    width: 240px;
-    height: 160px;
+    width: 160px;
+    height: 110px;
     object-fit: contain;
-    border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .project-info {
@@ -109,17 +110,35 @@ a:hover {
     font-size: 14px;
 }
 
+
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 650px) {
+
+    .container {
+        margin: 35px auto;
+        padding: 0 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
 
     .project {
         flex-direction: column;
         align-items: flex-start;
+        gap: 15px;
     }
 
     .project-image {
-        width: 100%;
-        height: auto;
+        width: 160px;
+        height: 110px;
     }
-
-}
 }
