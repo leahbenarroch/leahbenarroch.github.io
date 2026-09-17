@@ -66,4 +66,60 @@ a:hover {
         width: 160px;
     }
 
+.project {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.project-image {
+    width: 240px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-meta {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.project-info p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.project-links {
+    font-size: 15px;
+}
+
+.project-highlight {
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+}
 }
